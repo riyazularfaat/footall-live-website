@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    background-color: rgba(255, 245, 238, 0.684);
+}
+header{
+     background-color: rgb(7, 7, 172);
+     padding: 50px 100px 0px 100px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3em;
+}
+.nav-block{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    align-items: center;
+}
+.nav-block a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.nav-block a:hover{
+    background-color: white;
+    color: red;
+    padding: 0.6em;
+}
+.login-button button{
+    background-color: red;
+    padding: 0.6rem 1.2rem;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 0 2px 2px rgba(0,0,0,0.11), 0 4px 4px rgba(0,0,0,0.11), 0 8px 8px rgba(0,0,0,0.11), 0 16px 16px rgba(0,0,0,0.11), 0 32px 32px rgba(0,0,0,0.11);
+}
+.login-button button:hover{
+    cursor: pointer;
+}
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.title {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+}
+.title:hover {
+    transform: scale(1.2) skew(20deg);
+    transition: 1s;
+    color: sienna;
+}
+.btn {
+    background-color: rgb(152, 4, 4);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.btn:hover {
+    background-color: rgb(54, 183, 3);
+    transition: 1s;
+}
+.image{
+    padding: 12px;
+}
+.image img {
+    width: 500px;
+    height: 500px;
+}
+.image img:hover {
+    transform: rotate(360deg) scale(0.4);
+    transition: 4s;
+}
+/* bannner section ended */
+.players{
+    background-color: rgba(244, 165, 96, 0.322);
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px 100px 50px 100px;
+    grid-gap: 50px;
+}
+.player{
+    background-color: rgb(199, 242, 114);
+    padding: 12px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    text-align: justify;
+}
+.player img{
+    width: 300px;
+    height: 300px;
+}
+.player img:hover{
+    transform: scale(0.5);
+    transition: 2s;
+}
+
+/* player section ended */
+
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    padding: 100px 50px 50px 100px;
+}
+.highlights p{
+    text-align: justify;
+}
+.highlights h1{
+    font-size: 50px;
+}
+.hlt-img {
+    padding: 12px;
+}
+.hlt-img img{
+    height: 400px;
+    width: 550px;
+}
+.info p{
+    text-align: justify;
+}
+/* highlights section ended */
+.gallery{
+    margin-top: 50px;
+    padding: 0px 100px 0px 100px;
+}
+.gallery-image{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+.gallery-image img{
+    width: 230px;
+    height: 200px;
+    border: 3px solid rgb(40, 36, 36);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+/* Galleryb section ended */
+.videos{
+    margin-top: 50px;
+    padding: 0px 100px 50px 100px;
+}
+.video-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+.video{
+    padding: 0px;
+    border: 5px solid gray;
+}
+footer{
+    background-color: white;
+    padding: 50px 100px 0px 100px;
+}
+footer p{
+    color: black;
+    text-align: center;
+}
+.copy-logo{
+    display: flex;
+    justify-content: center;
+}
+.copy-logo img{
+    width: 500px;
+    height: auto;
+
+}
+
+@media screen and (max-width: 768px){
+    .banner{
+        grid-template-columns: 1fr;
+        padding: 50px;
+    }
+    .players{
+        grid-template-columns: 1fr;
+        padding: 0px 50px 50px 50px;
+    }
+    .player img{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
